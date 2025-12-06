@@ -5,15 +5,22 @@ A wheeled robot with a module slot on the front, allowing module attachments wir
 I've been wanting to make this project for a while but never fully commited to it. Now I finally have the opportunity to. The project is inspired by voice assistants on mobile devices, like Siri, but with a physical body and animated face.
 
 ## PCB: 
-Controlled by an ESP32-S3 that will be plugged into the computer, recieves input from the microphone, and outputs audio through the audio amp and speaker.
+PCB contains power management, motor driver, pogo pins, esp32.
 <img width="1079" height="898" alt="Screenshot 2025-12-05 215438" src="https://github.com/user-attachments/assets/efe806d9-d16d-43c7-8516-04a01bef3e8c" />
 
 
 ## CAD: 
-Very smooth, curvy, triangular shape. Round display centered on the front, with holes for USB-c, microphone, and speaker.
-<img width="653" height="496" alt="Screenshot 2025-12-05 215749" src="https://github.com/user-attachments/assets/ff439cfc-0db1-4798-b756-94b3c3b15f9d" />
-<img width="626" height="491" alt="Screenshot 2025-12-05 215736" src="https://github.com/user-attachments/assets/606498c3-789a-4460-bdab-78e2d1d56668" />
+Smooth, round base with a flat front for module additions.
+
 <img width="1358" height="858" alt="Screenshot 2025-12-05 215607" src="https://github.com/user-attachments/assets/97b60a4c-1d1e-4048-a93e-0e881f40a305" />
+
+Simple shell for the headlights module to be contained in.
+
+<img width="653" height="496" alt="Screenshot 2025-12-05 215749" src="https://github.com/user-attachments/assets/ff439cfc-0db1-4798-b756-94b3c3b15f9d" />
+
+Simple lightweight wheels with slots for motor shaft.
+
+<img width="626" height="491" alt="Screenshot 2025-12-05 215736" src="https://github.com/user-attachments/assets/606498c3-789a-4460-bdab-78e2d1d56668" />
 
 <br>
 
