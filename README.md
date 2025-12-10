@@ -15,7 +15,10 @@ Includes:
 <img width="849" height="888" alt="Screenshot 2025-12-09 192952" src="https://github.com/user-attachments/assets/c28d4941-5d86-4cc8-929d-230980298c60" />
 
 ## CAD: 
-Smooth, round base with a flat front for module additions.
+Smooth, round base with a flat front for module additions. Detachable lid for battery and PCB.
+
+<img width="973" height="673" alt="Screenshot 2025-12-09 194858" src="https://github.com/user-attachments/assets/d134b6b6-ffb3-46d9-ab19-65d7b360b4dd" />
+<img width="917" height="569" alt="Screenshot 2025-12-09 195018" src="https://github.com/user-attachments/assets/b91aab6c-b5ff-484d-aec8-237d12555ef6" />
 
 <img width="1358" height="858" alt="Screenshot 2025-12-05 215607" src="https://github.com/user-attachments/assets/97b60a4c-1d1e-4048-a93e-0e881f40a305" />
 
