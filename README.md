@@ -1,13 +1,18 @@
 # Wireless Snap-On Modular Robot
-A wheeled robot with a module slot on the front, allowing module attachments wirelessly through pogo pins.
+A wheeled robot with a module slot on the front, allowing module attachments wirelessly through pogo pins. Driven by two motors in the rear and controlled by a joystick mounted on top.
 
 ## Why?
-I've been wanting to make this project for a while but never fully commited to it. Now I finally have the opportunity to. The project is inspired by voice assistants on mobile devices, like Siri, but with a physical body and animated face.
+I've previously made a robot that is sort of modular, but you need to connect the wires together and use the janky pins to attach them to the base. I wanted to create a new robot with an improved system completely wireless.
 
 ## PCB: 
-PCB contains power management, motor driver, pogo pins, esp32.
-<img width="1079" height="898" alt="Screenshot 2025-12-05 215438" src="https://github.com/user-attachments/assets/efe806d9-d16d-43c7-8516-04a01bef3e8c" />
-
+Includes:
+- Power management
+- Motor driver
+- Wireless module interface (pogo pins)
+- Microcontroller hub
+- Headlights module
+  
+<img width="849" height="888" alt="Screenshot 2025-12-09 192952" src="https://github.com/user-attachments/assets/c28d4941-5d86-4cc8-929d-230980298c60" />
 
 ## CAD: 
 Smooth, round base with a flat front for module additions.
@@ -26,16 +31,42 @@ Simple lightweight wheels with slots for motor shaft.
 
 
 ## BOM
-| Item             | Description                          | Amount | Total Cost         |
-|------------------|--------------------------------------|--------|---------------------|
-| Round Display    | 1.28" TFT LCD GC9A01                 | 1      | $3.80               |
-| Microphone Module| I2S INMP441 Microphone               | 1      | 0 (Already Have)    |
-| Speaker Module   | 4 ohm 3 watt                         | 1      | 0 (Already Have)    |
-| Audio Amp        | MAX98357A Audio Amplifier Module     | 1      | 0 (Already Have)    |
-| ESP32 S3         | N16R8                                | 1      | $6.60               |
-| USB-C Cable      | For power and programming            | 1      | 0 (Already Have)    |
-| Jumper Wires     |                                      | ~20    | 0 (Already Have)    |
-| Breadboard       | For prototyping                      | 1      | 0 (Already Have)    |
-**Total:** **$10.40**          
+| Item                      | Type                |   Quantity | Price (Total)   | Vendor     |
+|:--------------------------|:--------------------|-----------:|:----------------|:-----------|
+| CL21A106KAYNNNE           | 10uF                |         10 | $0.10           | JLCPCB     |
+| CL31A226KAHNNNE           | 22uF                |          5 | $0.20           | JLCPCB     |
+| CL21B105KBFNNNE           | 1uF                 |          5 | $0.04           | JLCPCB     |
+| CL10A225KO8NNNC           | 2.2uF               |         10 | $0.05           | JLCPCB     |
+| CL31A107MQHNNNE           | 100uF               |          5 | $0.27           | JLCPCB     |
+| CL05B104KO5NNNC           | 100nF               |         20 | $0.02           | JLCPCB     |
+| CL21B103KBANNNC           | 10nF                |          5 | $0.03           | JLCPCB     |
+| B2B-XH-A(LF)(SN)          | JSTConnector        |         20 | $0.70           | LCSC       |
+| XL-302UWC                 | XL-302UWC           |         20 | $0.46           | LCSC       |
+| KT-0603R                  | KT-0603R            |          5 | $0.03           | JLCPCB     |
+| AO3401A                   | AO3401A             |          5 | $0.28           | JLCPCB     |
+| 0603WAF5101T5E            | 5.1kΩ               |         10 | $0.01           | JLCPCB     |
+| 0603WAF1201T5E            | 1.2kΩ               |          5 | $0.01           | JLCPCB     |
+| 0603WAF3303T5E            | 330kΩ               |          5 | $0.01           | JLCPCB     |
+| 1206W4F1003T5E            | 100kΩ               |          5 | $0.02           | JLCPCB     |
+| 0805W8F1002T5E            | 10kΩ                |         20 | $0.04           | JLCPCB     |
+| 0805W8F1000T5E            | 100Ω                |         10 | $0.02           | JLCPCB     |
+| 0805W8F2200T5E            | 220Ω                |         15 | $0.03           | JLCPCB     |
+| TS-1088-AR02016           | TS-1088-AR02016     |         15 | $0.64           | JLCPCB     |
+| ESP32-S3-WROOM-1-N8R2     | 2.4GHz              |          0 | $4.69           | LCSC       |
+| TP4056                    | TP4056              |          0 | $0.42           | LCSC       |
+| TPS61202DRCT              | TPS61202DRCT        |          0 | $1.76           | LCSC       |
+| APH0420T4R7M              | 4.7uH               |          0 | $0.41           | LCSC       |
+| AP2112K-3.3TRG1           | AP2112K-3.3TRG1     |          0 | $0.46           | LCSC       |
+| DRV8833PWPR               | DRV8833PWPR         |          0 | $0.67           | LCSC       |
+| TYPE-C 16PIN 2MD(073)     | TYPE-C16PIN2MD(073) |         10 | $0.59           | LCSC       |
+| 1206L150/16NR             | 1206L150/16NR       |         10 | $0.46           | LCSC       |
+| Xinyangze YZ134112062B-02 | Pogo pins           |          5 | $1.43           | LCSC       |
+| Joystick module           | nan                 |          1 | 1.2             | Aliexpress |
+| Gear motor                | N20                 |         10 | 7               | Aliexpress |
+| PCB + PCBA + other fees   | nan                 |        nan | $14.86          | JLCPCB     |
+| Shipping and handling     | nan                 |        nan | $11.62          | LCSC       |
+| Shipping                  | nan                 |        nan | $1.99           | Aliexpress |
 
-[Sheet With Links](https://docs.google.com/spreadsheets/d/1rEzeNBBt6LBTQF6fnU12Dy_3lUBRjMwdXFT9IxuN5R0/edit?usp=sharing)
+Total: $50.50
+
+[Sheet With Links](https://docs.google.com/spreadsheets/d/1DUcNddXo8VYgS7BtmotNU0K7JUAEApslePg6cg7R3zo/edit?usp=sharing)
