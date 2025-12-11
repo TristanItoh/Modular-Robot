@@ -14,6 +14,9 @@ Includes:
   
 <img width="849" height="888" alt="Screenshot 2025-12-09 192952" src="https://github.com/user-attachments/assets/c28d4941-5d86-4cc8-929d-230980298c60" />
 
+### Schematic
+<img width="1173" height="823" alt="Screenshot 2025-12-05 001956" src="https://github.com/user-attachments/assets/e90a1877-60a6-437c-afeb-dbb1d6c95492" />
+
 ## CAD: 
 Smooth, round base with a flat front for module additions. Detachable lid for battery and PCB.
 
